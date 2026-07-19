@@ -56,7 +56,7 @@ export default function Header({ lang = 'fr' }) {
         <Link href={isAr ? '/ar' : '/'} className="logo">
           <span style={{ fontSize: '2rem' }}>🦷</span>
           {isAr ? (
-            <>عيادة <span>الكنزي لطب الأسنان</span></>
+            <>الكنزي لطب الأسنان <span>عيادة</span></>
           ) : (
             <>CABINET <span>DENTAIRE ELKENZI</span></>
           )}
