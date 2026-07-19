@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اتصل بنا | عيادة الكنزي لطب الأسنان</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <span style="font-size:2rem;">🦷</span> عيادة <span>الكنزي لطب الأسنان</span>
+      </a>
+      <div class="navbar-right">
+        <ul class="nav-links">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="gallery.html">معرض الصور</a></li>
+          <li><a href="contact.html" class="active">اتصل بنا</a></li>
+        </ul>
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-btn" type="button">🌐 AR <span class="lang-dropdown-caret">▾</span></button>
+          <div class="lang-dropdown-content">
+            <a href="../contact.html">🇫🇷 Français</a>
+            <a href="contact.html" class="active-lang">🇩🇿 العربية</a>
+          </div>
+        </div>
+      </div>
+      <button class="mobile-menu-btn">☰</button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div style="background-color: var(--light-blue); padding: 4rem 0 8rem; text-align: center;">
+    <div class="container">
+      <h1 style="font-size: 2.5rem;">احجز موعدك</h1>
+      <p style="color: var(--text-light); max-width: 600px; margin: 0 auto;">لا تترددوا في التواصل معنا لأي استفسار أو لتحديد موعد استشارتكم القادمة. ابتسامتكم هي أولويتنا.</p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="container">
+    <div class="contact-container">
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <h2>معلومات الاتصال</h2>
+        <p>فريق عيادة الكنزي لطب الأسنان في خدمتكم الكاملة لإرشادكم ومرافقتكم في مسار العلاج.</p>
+
+        <div class="info-item mt-2">
+          <div class="info-icon">📍</div>
+          <div>
+            <h4 style="margin-bottom: 0.2rem; color: var(--text-dark);">عنوان العيادة</h4>
+            <p style="margin: 0; color: var(--text-light);">الرويسو، 16000<br>الجزائر العاصمة، الجزائر</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div>
+            <h4 style="margin-bottom: 0.2rem; color: var(--text-dark);">الهاتف</h4>
+            <p style="margin: 0; color: var(--text-light);">0799 13 49 59</p>
+            <p style="margin: 0; font-size: 0.85rem; color: var(--primary-color);">في حالة الطوارئ السنية، اتصلوا بهذا الرقم مباشرة.</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">✉️</div>
+          <div>
+            <h4 style="margin-bottom: 0.2rem; color: var(--text-dark);">البريد الإلكتروني</h4>
+            <p style="margin: 0; color: var(--text-light);">drbelguidoum.93@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">🕒</div>
+          <div>
+            <h4 style="margin-bottom: 0.2rem; color: var(--text-dark);">ساعات العمل</h4>
+            <p style="margin: 0; color: var(--text-light);">السبت إلى الأربعاء: 10:00 - 18:00<br>الخميس: مغلق</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div style="background-color: var(--bg-color); padding: 2.5rem; border-radius: 16px; border: 1px solid #e2e8f0;">
+        <h3 style="margin-bottom: 1.5rem;">رسالتكم</h3>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">الاسم الكامل</label>
+            <input type="text" id="name" required placeholder="مثال: محمد بلويزداد">
+          </div>
+          <div class="form-group">
+            <label for="phone">رقم الهاتف</label>
+            <input type="tel" id="phone" required placeholder="مثال:  0776 66 67 66">
+          </div>
+          <div class="form-group">
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" required placeholder="مثال: Mohammed-Belouizdad@email.com">
+          </div>
+          <div class="form-group">
+            <label for="reason">سبب الموعد</label>
+            <select id="reason" required>
+              <option value="" disabled selected>اختر السبب</option>
+              <option value="consultation">استشارة / فحص عام</option>
+              <option value="detartrage">تنظيف الأسنان (إزالة الجير)</option>
+              <option value="carie">علاج تسوس (حشو الأسنان)</option>
+              <option value="extraction">خلع سن</option>
+              <option value="devitalisation">علاج العصب (قناة الجذر)</option>
+              <option value="implant">زراعة الأسنان</option>
+              <option value="prothese">تركيبات الأسنان (تاج، جسر، طقم أسنان)</option>
+              <option value="blanchiment">تبييض الأسنان</option>
+              <option value="orthodontie">تقويم الأسنان</option>
+              <option value="gencives">علاج اللثة</option>
+              <option value="urgence">حالة طارئة (ألم أو إصابة)</option>
+              <option value="autre">أخرى</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">رسالتكم أو سبب الاستشارة</label>
+            <textarea id="message" rows="5" required placeholder="مثال: مرحبًا، أود حجز موعد لتنظيف الأسنان..."></textarea>
+          </div>
+          <button type="submit" class="btn" style="width: 100%; font-size: 1.1rem; padding: 14px;">إرسال الطلب</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Google Map (Placeholder) -->
+  <section style="margin-top: 4rem;">
+    <!-- Replace src with your actual google maps embed iframe link -->
+    <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.150207896809!2d3.078795776879264!3d36.74296547226359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fb38f80cb8235%3A0x924bfc585d93cf22!2sDentalart%20cabinet%20dr%20Belguidoum!5e0!3m2!1sfr!2sdz!4v1784458146164!5m2!1sfr!2sdz" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer style="margin-top: 0;">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 1rem; display:inline-block;">
+            <span style="font-size:1.5rem;">🦷</span> عيادة <span>الكنزي لطب الأسنان</span>
+          </a>
+          <p>المرجع في مجال العناية بالأسنان عالية الجودة. نعتني بصحة فمكم بلطف وخبرة.</p>
+        </div>
+        <div class="footer-col">
+          <h3>تابعونا</h3>
+          <div class="social-links">
+            <a href="https://facebook.com/cabinetdentaireelkenzi" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://linkedin.com/in/cabinetdentaireelkenzi" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/cabinetdentaireelkenzi" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/cabinetdentaireelkenzi" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>روابط سريعة</h3>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="gallery.html">معرض الصور</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>اتصل بنا</h3>
+          <ul>
+            <li>📍 الرويسو، الجزائر العاصمة، الجزائر، 16000</li>
+            <li>📞 0799 13 49 59</li>
+            <li>✉️ drbelguidoum.93@gmail.com</li>
+            <li>🕒 السبت - الأربعاء: 10:00 - 18:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 عيادة الكنزي لطب الأسنان. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
