@@ -5,17 +5,24 @@ export default function Footer({ lang = 'fr' }) {
   const prefix = isAr ? '/ar' : '';
 
   return (
-    <footer style={undefined}>
+    <footer>
       <div className="container">
         <div className="footer-grid">
           <div className="footer-col">
-            <Link href={`${prefix}/`} className="logo" style={{ marginBottom: '1rem', display: 'inline-block' }}>
-              <span style={{ fontSize: '1.5rem' }}>🦷</span>
-              {isAr ? (
-                <>عيادة <span>الكنزي لطب الأسنان</span></>
-              ) : (
-                <>CABINET <span>DENTAIRE ELKENZI</span></>
-              )}
+            <Link href={`${prefix}/`} className="logo" style={{ marginBottom: '1rem', display: 'inline-flex' }}>
+              <div className="logo-text">
+                {isAr ? (
+                  <>
+                    <span className="logo-name" style={{ fontFamily: "'Cairo', sans-serif", fontSize: '1.2rem' }}>عيادة الكنزي لطب الأسنان</span>
+                    <span className="logo-subtitle">Dental Art</span>
+                  </>
+                ) : (
+                  <>
+                    <span className="logo-name" style={{ fontSize: '1.2rem' }}>Dental Art</span>
+                    <span className="logo-subtitle">Cabinet Dentaire</span>
+                  </>
+                )}
+              </div>
             </Link>
             <p>
               {isAr
@@ -27,17 +34,17 @@ export default function Footer({ lang = 'fr' }) {
           <div className="footer-col">
             <h3>{isAr ? 'شبكاتنا الاجتماعية' : 'Nos Réseaux Sociaux'}</h3>
             <div className="social-links">
-              <a href="https://facebook.com/cabinetdentaireelkenzi" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <i className="fab fa-facebook-f"></i>
+              <a href="https://wa.me/21307991349​59" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <i className="fab fa-whatsapp"></i>
               </a>
-              <a href="https://linkedin.com/in/cabinetdentaireelkenzi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <i className="fab fa-linkedin-in"></i>
-              </a>
-              <a href="https://instagram.com/cabinetdentaireelkenzi" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <a href="https://instagram.com/drbelguidoum" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://youtube.com/cabinetdentaireelkenzi" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                <i className="fab fa-youtube"></i>
+              <a href="https://tiktok.com/@cabinetdentairedrbelguidoum" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                <i className="fab fa-tiktok"></i>
+              </a>
+              <a href="https://facebook.com/cabinetdentairedrbelguidoum" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <i className="fab fa-facebook-f"></i>
               </a>
             </div>
           </div>
@@ -55,8 +62,10 @@ export default function Footer({ lang = 'fr' }) {
           <div className="footer-col">
             <h3>{isAr ? 'اتصل بنا' : 'Contact'}</h3>
             <ul>
-              <li>📍 {isAr ? 'الرويسو، الجزائر العاصمة، 16000' : 'Ruisseau, Alger, Algiers, Algeria, 16000'}</li>
-              <li>📞 0799 13 49 59</li>
+              <li>📍 {isAr
+                ? '220 شارع محمد بلوزداد، أمام سونلغاز، فوق مصلحة الضرائب، الرويسو، الجزائر العاصمة'
+                : '220 rue Mohamed Belouizdad, en face Sonalgaz, au dessus des impôts de Ruisseau'}</li>
+              <li>📞 0799 13 49 59 / 0778 32 38 16</li>
               <li>✉️ drbelguidoum.93@gmail.com</li>
               <li>🕒 {isAr ? 'السبت - الأربعاء : 10:00 - 18:00' : 'Sam - Merc : 10h00 - 18h00'}</li>
             </ul>
@@ -66,8 +75,8 @@ export default function Footer({ lang = 'fr' }) {
         <div className="footer-bottom">
           <p>
             {isAr
-              ? '© 2026 عيادة الكنزي لطب الأسنان. جميع الحقوق محفوظة.'
-              : '© 2026 Cabinet Dentaire ELKENZI. Tous droits réservés.'}
+              ? '© 2026 Dental Art — عيادة الكنزي لطب الأسنان. جميع الحقوق محفوظة.'
+              : '© 2026 Dental Art — Cabinet Dentaire Dr Belguidoum. Tous droits réservés.'}
           </p>
         </div>
       </div>

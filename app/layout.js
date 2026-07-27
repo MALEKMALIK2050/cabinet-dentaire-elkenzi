@@ -3,8 +3,8 @@ import './globals.css';
 export const metadata = {
   metadataBase: new URL('https://elkenzidental.vercel.app'),
   title: 'CABINET DENTAIRE ELKENZI | Cabinet Dentaire d\'Excellence à Alger',
-  description: 'Cabinet Dentaire ELKENZI à Ruisseau, Alger. Soins dentaires modernes, sans douleur et adaptés à vos besoins. Esthétique dentaire, implantologie, soins préventifs.',
-  keywords: 'dentiste, cabinet dentaire, Alger, Ruisseau, soins dentaires, implant, blanchiment, ELKENZI',
+  description: 'Cabinet Dentaire ELKENZI (Dental Art) à Ruisseau, Alger. Soins dentaires modernes, sans douleur et adaptés à vos besoins. Esthétique dentaire, implantologie, soins préventifs.',
+  keywords: 'dentiste, cabinet dentaire, Alger, Ruisseau, soins dentaires, implant, blanchiment, ELKENZI, Dental Art, Belguidoum, عيادة الكنزي',
   alternates: {
     languages: {
       'fr-DZ': '/',
@@ -24,20 +24,22 @@ export const metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Dentist',
-  name: 'Cabinet Dentaire ELKENZI',
+  name: 'Cabinet Dentaire ELKENZI — Dr Belguidoum',
+  alternateName: 'عيادة الكنزي لطب الأسنان',
   image: 'https://elkenzidental.vercel.app/images/dent1.png',
   url: 'https://elkenzidental.vercel.app',
-  telephone: '+213550000000', // To be updated by user
+  telephone: ['+213799134959', '+213778323816'],
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Ruisseau',
-    addressLocality: 'Alger',
+    streetAddress: '220 rue Mohamed Belouizdad, en face Sonalgaz, au dessus des impôts',
+    addressLocality: 'Ruisseau, Alger',
+    postalCode: '16000',
     addressCountry: 'DZ'
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 36.752887, // Approximate for Alger
-    longitude: 3.042048
+    latitude: 36.742965,
+    longitude: 3.078795
   },
   openingHoursSpecification: [
     {
@@ -47,11 +49,10 @@ const jsonLd = {
         'Sunday',
         'Monday',
         'Tuesday',
-        'Wednesday',
-        'Thursday'
+        'Wednesday'
       ],
-      opens: '08:00',
-      closes: '17:00'
+      opens: '10:00',
+      closes: '18:00'
     }
   ],
   priceRange: '$$'

@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>À propos | CABINET DENTAIRE ELKENZI</title>
+  <title>À propos | DentaArt — Cabinet Dentaire Dr Belguidoum</title>
+  <meta name="description" content="Découvrez le cabinet dentaire DentaArt du Dr Belguidoum. Notre philosophie, notre équipe et nos valeurs pour des soins d'excellence à Ruisseau, Alger.">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
 
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
   <!-- Header -->
-  <header>
+  <header id="main-header">
     <div class="container navbar">
       <a href="index.html" class="logo">
-        <span style="font-size:2rem;">🦷</span> CABINET <span>DENTAIRE ELKENZI</span>
+        <div class="logo-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="28" height="28" fill="none">
+            <path d="M32 4C28 14 16 22 16 36c0 10 7 20 16 24 9-4 16-14 16-24C48 22 36 14 32 4z" fill="white" opacity="0.95" />
+            <path d="M32 22c-3 0-5 1.5-5.5 4-.5 3 .5 6 1.5 9 .8 2 1 4 .5 6-.5 3 0 5 1 7 .5 1 1 1.5 1.5 1.5h2c.5 0 1-.5 1.5-1.5 1-2 1.5-4 1-7-.5-2-.3-4 .5-6 1-3 2-6 1.5-9-.5-2.5-2.5-4-5.5-4z" fill="rgba(184,22,46,0.85)" />
+            <path d="M27 22c-1-3 0-7 3-10 2.5-2.5 6-3 8-1 1.5 1.5 2 3.5 1 6" fill="none" stroke="rgba(184,22,46,0.4)" stroke-width="1" stroke-linecap="round"/>
+          </svg>
+        </div>
+        Denta<span>Art</span>
       </a>
       <div class="navbar-right">
-        <ul class="nav-links">
+        <ul class="nav-links" id="navLinks">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="about.html" class="active">À propos</a></li>
           <li><a href="gallery.html">Galerie</a></li>
@@ -31,37 +46,75 @@
           </div>
         </div>
       </div>
-      <button class="mobile-menu-btn">☰</button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
   </header>
 
   <!-- Page Header -->
-  <div style="background-color: var(--light-blue); padding: 4rem 0; text-align: center;">
+  <section class="page-header">
     <div class="container">
-      <h1 style="font-size: 2.5rem;">À Propos de Notre Cabinet</h1>
-      <p style="color: var(--text-light); max-width: 600px; margin: 0 auto;">Une équipe dévouée à votre santé bucco-dentaire, alliant technologie de pointe et douceur dans chaque soin.</p>
+      <div class="page-breadcrumb">
+        <a href="index.html">Accueil</a>
+        <span>/</span>
+        <span>À propos</span>
+      </div>
+      <h1 class="fade-up">À Propos de Notre Cabinet</h1>
+      <p class="fade-up">Une équipe dévouée à votre santé bucco-dentaire, alliant technologie de pointe et douceur dans chaque soin.</p>
     </div>
-  </div>
+  </section>
 
-  <!-- Content Section -->
+  <!-- About Content Section -->
   <section class="container py-4">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-      <div>
+    <div class="about-content">
+      <div class="fade-up">
         <h2>Notre Philosophie</h2>
-        <p>Au <strong>Cabinet Dentaire ELKENZI</strong>, nous croyons que chaque patient mérite une attention particulière et des soins d'une qualité irréprochable. Notre mission est de vous offrir une expérience dentaire agréable, sans douleur et totalement personnalisée.</p>
+        <div class="gradient-line" style="margin: 0 0 1.5rem;"></div>
+        <p>Au <strong>Cabinet Dentaire DentaArt</strong>, nous croyons que chaque patient mérite une attention particulière et des soins d'une qualité irréprochable. Notre mission est de vous offrir une expérience dentaire agréable, sans douleur et totalement personnalisée.</p>
         <p>Forts de plusieurs années d'expérience, le Dr Belguidoum et son équipe se forment continuellement aux dernières avancées technologiques et médicales pour vous garantir des traitements à la pointe de la modernité.</p>
 
         <h3 style="margin-top: 2rem;">Pourquoi nous choisir ?</h3>
-        <ul style="list-style: none; margin-top: 1rem;">
-          <li style="margin-bottom: 0.5rem;">✅ <strong>Hygiène stricte :</strong> Stérilisation aux normes les plus rigoureuses.</li>
-          <li style="margin-bottom: 0.5rem;">✅ <strong>Écoute active :</strong> Nous prenons le temps de comprendre vos besoins et vos craintes.</li>
-          <li style="margin-bottom: 0.5rem;">✅ <strong>Soins en douceur :</strong> Des techniques modernes pour minimiser tout inconfort.</li>
-          <li style="margin-bottom: 0.5rem;">✅ <strong>Transparence totale :</strong> Des plans de traitement et des devis clairs.</li>
+        <ul class="about-features">
+          <li>
+            <span class="feature-icon"><i class="fas fa-shield-alt"></i></span>
+            <div><strong>Hygiène stricte :</strong> Stérilisation aux normes les plus rigoureuses.</div>
+          </li>
+          <li>
+            <span class="feature-icon"><i class="fas fa-headset"></i></span>
+            <div><strong>Écoute active :</strong> Nous prenons le temps de comprendre vos besoins et vos craintes.</div>
+          </li>
+          <li>
+            <span class="feature-icon"><i class="fas fa-hand-holding-heart"></i></span>
+            <div><strong>Soins en douceur :</strong> Des techniques modernes pour minimiser tout inconfort.</div>
+          </li>
+          <li>
+            <span class="feature-icon"><i class="fas fa-file-invoice-dollar"></i></span>
+            <div><strong>Transparence totale :</strong> Des plans de traitement et des devis clairs.</div>
+          </li>
         </ul>
       </div>
-      <div>
-        <img src="images/dent2.png" alt="Équipe dentaire professionnelle" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-lg);">
+      <div class="fade-up">
+        <div class="team-card">
+          <div class="team-card-img">
+            <img src="images/dent2.png" alt="Équipe dentaire professionnelle DentaArt">
+          </div>
+          <div class="team-card-body">
+            <h3>Dr Belguidoum</h3>
+            <p style="color: var(--crimson); font-weight: 600; margin-bottom: 0.5rem; font-size: 0.9rem;">Chirurgien-Dentiste</p>
+            <p style="color: var(--text-muted); font-size: 0.92rem;">Passionné par son métier, le Dr Belguidoum met tout son savoir-faire au service de votre sourire. Son approche humaine et son expertise technique garantissent des soins d'excellence.</p>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2 class="fade-up">Notre engagement envers vous</h2>
+      <p class="fade-up">Chaque patient est unique. Nous adaptons nos soins à vos besoins spécifiques pour un résultat optimal et durable.</p>
+      <a href="contact.html" class="btn fade-up"><span>Prendre Rendez-vous</span></a>
     </div>
   </section>
 
@@ -70,18 +123,24 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <a href="index.html" class="logo" style="margin-bottom: 1rem; display:inline-block;">
-            <span style="font-size:1.5rem;">🦷</span> CABINET <span>DENTAIRE ELKENZI</span>
+          <a href="index.html" class="logo" style="margin-bottom: 1rem; display:inline-flex;">
+            <div class="logo-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="24" height="24" fill="none">
+                <path d="M32 4C28 14 16 22 16 36c0 10 7 20 16 24 9-4 16-14 16-24C48 22 36 14 32 4z" fill="white" opacity="0.95" />
+                <path d="M32 22c-3 0-5 1.5-5.5 4-.5 3 .5 6 1.5 9 .8 2 1 4 .5 6-.5 3 0 5 1 7 .5 1 1 1.5 1.5 1.5h2c.5 0 1-.5 1.5-1.5 1-2 1.5-4 1-7-.5-2-.3-4 .5-6 1-3 2-6 1.5-9-.5-2.5-2.5-4-5.5-4z" fill="rgba(184,22,46,0.85)" />
+              </svg>
+            </div>
+            Denta<span>Art</span>
           </a>
-          <p>La référence en matière de soins dentaires de haute qualité. Nous prenons soin de votre santé bucco-dentaire avec douceur et expertise.</p>
+          <p style="margin-top: 0.5rem;">Cabinet dentaire du Dr Belguidoum. La référence en matière de soins dentaires de haute qualité à Ruisseau, Alger.</p>
         </div>
         <div class="footer-col">
-          <h3>Nos Réseaux Sociaux</h3>
+          <h3>Suivez-nous</h3>
           <div class="social-links">
-            <a href="https://facebook.com/cabinetdentaireelkenzi" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://linkedin.com/in/cabinetdentaireelkenzi" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://instagram.com/cabinetdentaireelkenzi" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://youtube.com/cabinetdentaireelkenzi" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61576abortedentalart" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/drbelguidoum" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@drbelguidoum" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.snapchat.com/add/drbelguidoum" target="_blank" aria-label="Snapchat"><i class="fab fa-snapchat-ghost"></i></a>
           </div>
         </div>
         <div class="footer-col">
@@ -96,18 +155,29 @@
         <div class="footer-col">
           <h3>Contact</h3>
           <ul>
-            <li>📍 Ruisseau, Alger, Algiers, Algeria, 16000</li>
-            <li>📞 0799 13 49 59</li>
-            <li>✉️ drbelguidoum.93@gmail.com</li>
+            <li>📍 220 rue Mohamed Belouizdad, en face Sonalgaz, Ruisseau, Alger 16000</li>
+            <li>📞 <a href="tel:+213799134959" style="color: var(--gray-400);">0799 13 49 59</a></li>
+            <li>📞 <a href="tel:+213778323816" style="color: var(--gray-400);">0778 32 38 16</a></li>
+            <li>✉️ <a href="mailto:drbelguidoum.93@gmail.com" style="color: var(--gray-400);">drbelguidoum.93@gmail.com</a></li>
             <li>🕒 Sam - Merc : 10h00 - 18h00</li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Cabinet Dentaire ELKENZI. Tous droits réservés.</p>
+        <p>&copy; 2026 DentaArt — Cabinet Dentaire Dr Belguidoum. Tous droits réservés.</p>
       </div>
     </div>
   </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/213799134959" target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <i class="fas fa-chevron-up"></i>
+  </button>
 
   <script src="js/main.js"></script>
 </body>

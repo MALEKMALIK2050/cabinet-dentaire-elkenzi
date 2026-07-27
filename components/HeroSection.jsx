@@ -21,9 +21,18 @@ export default function HeroSection({ lang = 'fr' }) {
               : "Retrouvez confiance en vous grâce à notre expertise. Nous offrons des soins dentaires modernes, sans douleur et adaptés à vos besoins."}
           </p>
           <div className="hero-actions">
-            <Link href={`${prefix}/contact`} className="btn">
-              {isAr ? 'حجز موعد' : 'Prendre Rendez-vous'}
+            <Link href={`${prefix}/contact`} className="btn btn-pulse">
+              {isAr ? '📅 حجز موعد' : '📅 Prendre Rendez-vous'}
             </Link>
+            <a
+              href="https://wa.me/213799134959"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-whatsapp"
+            >
+              <i className="fab fa-whatsapp" style={{ marginRight: isAr ? '0' : '8px', marginLeft: isAr ? '8px' : '0' }}></i>
+              {isAr ? 'واتساب' : 'WhatsApp'}
+            </a>
             <Link href={`${prefix}/a-propos`} className="btn btn-outline">
               {isAr ? 'اكتشف العيادة' : 'Découvrir le cabinet'}
             </Link>
