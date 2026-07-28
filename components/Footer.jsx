@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer({ lang = 'fr' }) {
   const isAr = lang === 'ar';
@@ -10,6 +11,14 @@ export default function Footer({ lang = 'fr' }) {
         <div className="footer-grid">
           <div className="footer-col">
             <Link href={`${prefix}/`} className="logo" style={{ marginBottom: '1rem', display: 'inline-flex' }}>
+              <Image
+                src="/images/logo.jpg"
+                alt="Dental Art Logo"
+                width={45}
+                height={45}
+                className="logo-img"
+                style={{ objectFit: 'contain', borderRadius: '8px' }}
+              />
               <div className="logo-text">
                 {isAr ? (
                   <>

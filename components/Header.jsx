@@ -1,39 +1,9 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect, useRef } from 'react';
-
-const DentalArtLogo = () => (
-  <svg className="logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-    {/* Tooth shape */}
-    <path
-      d="M24 4C18.5 4 14 7 12 11C10 15 10 20 11 24C12 28 14 34 16 40C17 43 19 44 20 44C21.5 44 22 42 22.5 39C23 36 23.5 33 24 33C24.5 33 25 36 25.5 39C26 42 26.5 44 28 44C29 44 31 43 32 40C34 34 36 28 37 24C38 20 38 15 36 11C34 7 29.5 4 24 4Z"
-      fill="url(#toothGrad)"
-      stroke="#991B1B"
-      strokeWidth="1.5"
-    />
-    {/* Face silhouette */}
-    <path
-      d="M20 14C20 14 21 12 24 12C27 12 28 14 28 14C28 14 29 17 28 20C27 22 26 23 24 24C22 23 21 22 20 20C19 17 20 14 20 14Z"
-      fill="url(#faceGrad)"
-      opacity="0.85"
-    />
-    {/* Shine */}
-    <ellipse cx="19" cy="12" rx="3" ry="4" fill="white" opacity="0.3" />
-    <defs>
-      <linearGradient id="toothGrad" x1="12" y1="4" x2="36" y2="44" gradientUnits="userSpaceOnUse">
-        <stop offset="0%" stopColor="#FECACA" />
-        <stop offset="50%" stopColor="#DC2626" />
-        <stop offset="100%" stopColor="#991B1B" />
-      </linearGradient>
-      <linearGradient id="faceGrad" x1="20" y1="12" x2="28" y2="24" gradientUnits="userSpaceOnUse">
-        <stop offset="0%" stopColor="#FEE2E2" />
-        <stop offset="100%" stopColor="#FECACA" />
-      </linearGradient>
-    </defs>
-  </svg>
-);
 
 const navItemsFr = [
   { href: '/', label: 'Accueil' },
@@ -85,7 +55,14 @@ export default function Header({ lang = 'fr' }) {
     <header>
       <div className="container navbar">
         <Link href={isAr ? '/ar' : '/'} className="logo">
-          <DentalArtLogo />
+          <Image
+            src="/images/logo.jpg"
+            alt="Dental Art Logo"
+            width={50}
+            height={50}
+            className="logo-img"
+            style={{ objectFit: 'contain', borderRadius: '8px' }}
+          />
           <div className="logo-text">
             {isAr ? (
               <>

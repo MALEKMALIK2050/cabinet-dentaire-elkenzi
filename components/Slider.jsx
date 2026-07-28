@@ -3,21 +3,11 @@
 import { useState, useEffect, useCallback } from 'react';
 
 const slidesFr = [
-  { image: '/images/dent1.png', title: 'Accueil chaleureux', desc: "Une salle d'attente moderne et confortable." },
-  { image: '/images/dent2.png', title: 'Cabinet moderne', desc: 'Des installations conçues pour votre bien-être.' },
-  { image: '/images/dent3.png', title: 'Technologie avancée', desc: 'Des équipements de dernière génération.' },
-  { image: '/images/dent4.png', title: 'Soins de qualité', desc: 'Des traitements adaptés à chaque patient.' },
-  { image: '/images/dent5.png', title: 'Hygiène irréprochable', desc: 'Une stérilisation conforme aux normes les plus strictes.' },
-  { image: '/images/dent6.png', title: 'Votre sourire, notre priorité', desc: "Une équipe à votre écoute pour des soins d'excellence." },
+  { image: '/images/result2.jpg', title: 'Un sourire transformé', desc: 'Résultat avant/après : des dents parfaitement alignées et éclatantes de blancheur.' },
 ];
 
 const slidesAr = [
-  { image: '/images/dent1.png', title: 'استقبال حار', desc: 'غرفة انتظار حديثة ومريحة.' },
-  { image: '/images/dent2.png', title: 'عيادة حديثة', desc: 'مرافق مصممة لراحتكم.' },
-  { image: '/images/dent3.png', title: 'تكنولوجيا متقدمة', desc: 'معدات من أحدث جيل.' },
-  { image: '/images/dent4.png', title: 'رعاية متميزة', desc: 'علاجات مخصصة لكل مريض.' },
-  { image: '/images/dent5.png', title: 'نظافة لا تشوبها شائبة', desc: 'تعقيم وفقاً لأعلى المعايير.' },
-  { image: '/images/dent6.png', title: 'ابتسامتكم أولويتنا', desc: 'فريق يصغي إليكم لتقديم رعاية متميزة.' },
+  { image: '/images/result2.jpg', title: 'ابتسامة متحولة', desc: 'نتيجة قبل/بعد: أسنان متوافقة تمامًا وبياض مبهر.' },
 ];
 
 export default function Slider({ lang = 'fr' }) {

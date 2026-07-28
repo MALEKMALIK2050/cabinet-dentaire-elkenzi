@@ -1,10 +1,10 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import GalleryGrid from '@/components/GalleryGrid';
+import GallerySlider from '@/components/GallerySlider';
 
 export const metadata = {
   title: 'Galerie | CABINET DENTAIRE ELKENZI',
-  description: 'Découvrez notre cabinet en images : espaces modernes, équipements de dernière génération et environnement confortable.',
+  description: 'Découvrez nos résultats avant/après et notre cabinet en images. Soins dentaires modernes à Alger.',
 };
 
 export default function GalleryPage() {
@@ -15,17 +15,16 @@ export default function GalleryPage() {
       {/* Page Header */}
       <div className="page-header">
         <div className="container">
-          <h1>Notre Cabinet en Images</h1>
+          <h1>Notre Galerie</h1>
           <p>
-            Découvrez nos espaces conçus pour votre confort et nos équipements
-            de dernière génération.
+            Explorez nos transformations dentaires et découvrez notre cabinet moderne.
           </p>
         </div>
       </div>
 
-      {/* Gallery Section */}
+      {/* Gallery Slider Section */}
       <section className="container py-4">
-        <GalleryGrid lang="fr" />
+        <GallerySlider lang="fr" />
       </section>
 
       <Footer lang="fr" />
